@@ -323,17 +323,18 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Bottom bar appears on scroll
+    // Bottom bar + nav appear on scroll
     const bottomBar = document.getElementById('bottomBar');
-    let lastScroll = 0;
+    const stickyNav = document.getElementById('stickyNav');
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > 400) {
         bottomBar.classList.add('visible');
+        stickyNav.classList.add('visible');
       } else {
         bottomBar.classList.remove('visible');
+        stickyNav.classList.remove('visible');
       }
-      lastScroll = currentScroll;
     });
   </script>
 </body>
