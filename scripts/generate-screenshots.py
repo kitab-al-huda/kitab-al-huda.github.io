@@ -13,14 +13,14 @@ SIZES = [400, 800, 1200]
 
 # Map old (spaced) filenames to clean names
 FILE_MAP = [
-    ("Screenshot_20260616-123812_ .jpg", "screenshot-library"),
-    ("Screenshot_20260616-123826_ .jpg", "screenshot-playlist"),
-    ("Screenshot_20260616-124130_ .jpg", "screenshot-settings"),
-    ("Screenshot_20260616-124141_ .jpg", "screenshot-player"),
-    ("Screenshot_20260616-124212_ .jpg", "screenshot-sura-list"),
-    ("Screenshot_20260616-124219_ .jpg", "screenshot-reciter"),
-    ("Screenshot_20260616-124237_ .jpg", "screenshot-home"),
-    ("Screenshot_20260616-135950_ .jpg", "screenshot-about"),
+    ("Screenshot_20260616-123812_ .jpg", "screenshot-playlist"),
+    ("Screenshot_20260616-123826_ .jpg", "screenshot-settings"),
+    ("Screenshot_20260616-124130_ .jpg", "screenshot-home"),
+    ("Screenshot_20260616-124141_ .jpg", "screenshot-about"),
+    ("Screenshot_20260616-124212_ .jpg", "screenshot-player"),
+    ("Screenshot_20260616-124219_ .jpg", "screenshot-sura-list"),
+    ("Screenshot_20260616-124237_ .jpg", "screenshot-reciter"),
+    ("Screenshot_20260616-135950_ .jpg", "screenshot-discover"),
 ]
 
 def process_file(src_name, base_name):
