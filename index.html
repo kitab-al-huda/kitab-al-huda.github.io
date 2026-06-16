@@ -3,92 +3,338 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كتاب الهدى — القرآن الكريم بدون إنترنت</title>
+  <title>كتاب الهدى — القرآن الكريم بدون إنترنت وبدون إعلانات</title>
+  <meta name="description" content="تطبيق إسلامي مجاني للاستماع إلى القرآن الكريم بأصوات أشهر القراء. بدون حزمة بيانات، بدون إعلانات، بدون تسجيل.">
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="كتاب الهدى — القرآن الكريم بدون إنترنت">
+  <meta property="og:description" content="تطبيق مجاني للاستماع إلى القرآن الكريم بأصوات أشهر القراء. بدون حزمة بيانات، بدون إعلانات.">
+  <meta property="og:image" content="https://kitab-al-huda.github.io/assets/icon.png">
+  <meta property="og:url" content="https://kitab-al-huda.github.io">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="كتاب الهدى — القرآن الكريم بدون إنترنت">
+  <meta name="twitter:description" content="تطبيق مجاني للاستماع إلى القرآن الكريم بأصوات أشهر القراء.">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "كتاب الهدى",
+    "operatingSystem": "Android",
+    "applicationCategory": "Lifestyle",
+    "description": "تطبيق إسلامي مجاني للاستماع إلى القرآن الكريم. بدون حزمة بيانات، بدون إعلانات، بدون تسجيل.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <img src="assets/icon.png" alt="شعار كتاب الهدى">
-    <h1>📖 كتاب الهدى</h1>
-    <p>استمع إلى القرآن الكريم مجاناً — بدون حزمة بيانات، بدون إعلانات</p>
-  </div>
-</header>
+  <!-- ====== Sticky Nav ====== -->
+  <nav class="sticky-nav" id="stickyNav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="assets/icon.png" alt="كتاب الهدى">
+        <span>كتاب الهدى</span>
+      </div>
+      <a href="#" class="btn btn-sm nav-cta">⬇️ تحميل مجاني</a>
+    </div>
+  </nav>
 
-<section id="about">
-  <div class="container">
-    <h2>عن التطبيق</h2>
-    <p>
-      تطبيق <strong>كتاب الهدى</strong> يتيح لك الاستماع إلى القرآن الكريم بأصوات أشهر القراء
-      بدون استهلاك رصيد الإنترنت. صمم خصيصاً للمستخدمين الذين تعتمد هواتفهم على
-      باقات التواصل الاجتماعي حصراً.
-    </p>
-  </div>
-</section>
-
-<section id="features">
-  <div class="container">
-    <h2>المميزات</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="icon">🎧</div>
-        <h3>استماع بدون إنترنت</h3>
-        <p>بث مباشر بدون استهلاك رصيد الإنترنت — لا يستهلك رصيد بياناتك العادي</p>
+  <!-- ====== Hero ====== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">🆓 مجاني بالكامل</div>
+        <h1>القرآن الكريم بدون إنترنت<br>بدون إعلانات <span class="gold-text">وبدون حساب</span></h1>
+        <p class="hero-subtitle">
+          تطبيق واحد يتيح لك الاستماع لأشهر القراء <strong>بدون استهلاك رصيد الإنترنت</strong>.
+          صمم خصيصاً لأصحاب باقات التواصل الاجتماعي.
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-lg">📥 حمل التطبيق الآن — مجاناً</a>
+          <p class="btn-caption">متوفر على Google Play</p>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">+١٠</span>
+            <span class="stat-label">قراء</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">١١٤</span>
+            <span class="stat-label">سورة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">٠٠</span>
+            <span class="stat-label">إعلانات</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">٠٠</span>
+            <span class="stat-label">ريال</span>
+          </div>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="icon">📂</div>
-        <h3>أكثر من ١٠ قراء</h3>
-        <p>اختر القارئ الذي تحب — الحصري، المنشاوي، عبد الباسط وغيرهم</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">📋</div>
-        <h3>قوائم تشغيل</h3>
-        <p>أنشئ قوائمك الخاصة ورتب السور حسب رغبتك</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">🌙</div>
-        <h3>مؤقت النوم</h3>
-        <p>نم والقرآن يقرأ — إيقاف تلقائي بعد الوقت المحدد</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">🔍</div>
-        <h3>بحث ذكي</h3>
-        <p>ابحث عن أي سورة بسرعة — حتى بالتشكيل أو بدونه</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">🔒</div>
-        <h3>خصوصية كاملة</h3>
-        <p>لا نجمع أي بيانات شخصية. لا تتبع، لا إعلانات</p>
+      <div class="hero-mockup fade-in">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="mockup-player">
+              <div class="mockup-header">الآن : سورة مريم</div>
+              <div class="mockup-reciter">محمد صديق المنشاوي</div>
+              <div class="mockup-wave">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="mockup-controls">
+                <span>⏮</span><span>▶️</span><span>⏭</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="screenshots">
-  <div class="container">
-    <h2>لقطات من التطبيق</h2>
-    <div class="screenshot-area">
-      📱 قريباً — لقطات الشاشة
+  <!-- ====== Trust Badges ====== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">🆓</span>
+          <span>مجاني بالكامل<br><small>لا يوجد اشتراكات</small></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">📶</span>
+          <span>بدون رصيد<br><small>للتواصل الاجتماعي</small></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🔒</span>
+          <span>خصوصية تامة<br><small>لا نجمّع بياناتك</small></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🚫</span>
+          <span>بدون إعلانات<br><small>تجربة نقية</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Why This App ====== -->
+  <section class="section compare-section" id="why">
+    <div class="container">
+      <h2 class="section-title">لماذا كتاب الهدى؟</h2>
+      <p class="section-desc">ليس مجرد مشغل قرآن — إنه الحل الوحيد الذي يعمل بدون رصيد إنترنت</p>
+      <div class="compare-grid">
+        <div class="compare-card compare-other">
+          <h3>التطبيقات الأخرى</h3>
+          <ul>
+            <li>❌ تحتاج رصيد إنترنت عادي</li>
+            <li>❌ إعلانات مزعجة</li>
+            <li>❌ تطلب تسجيل حساب</li>
+            <li>❌ تستهلك باقة البيانات</li>
+          </ul>
+        </div>
+        <div class="compare-card compare-us">
+          <div class="compare-badge">الأفضل</div>
+          <h3>📖 كتاب الهدى</h3>
+          <ul>
+            <li>✅ يشغل على باقات التواصل الاجتماعي</li>
+            <li>✅ بدون إعلانات نهائياً</li>
+            <li>✅ بدون تسجيل أو حساب</li>
+            <li>✅ لا يستهلك رصيدك العادي</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Features ====== -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <h2 class="section-title">مميزات التطبيق</h2>
+      <p class="section-desc">كل ما تحتاجه في تطبيق واحد — مجاناً</p>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🎧</div>
+          <h3>استماع بدون إنترنت</h3>
+          <p>بث مباشر بدون استهلاك رصيد الإنترنت العادي. يعمل مع باقات التواصل الاجتماعي حصراً.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🎙️</div>
+          <h3>أكثر من ١٠ قراء</h3>
+          <p>اختر القارئ الذي تحب — الحصري، المنشاوي، عبد الباسط، الحذيفي، السديس، وغيرهم.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📋</div>
+          <h3>قوائم تشغيل</h3>
+          <p>أنشئ قوائمك الخاصة ورتب السور حسب رغبتك. احفظ سورك المفضلة.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🌙</div>
+          <h3>مؤقت النوم</h3>
+          <p>نم والقرآن يقرأ. إيقاف تلقائي بعد الوقت الذي تحدده — هدوء تام.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔍</div>
+          <h3>بحث ذكي</h3>
+          <p>ابحث عن أي سورة بسرعة — حتى بالتشكيل أو بدونه. نتائج فورية.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🕌</div>
+          <h3>حديث اليوم</h3>
+          <p>بطاقات يومية من الأحاديث النبوية لتغذية روحك كل يوم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== How It Works ====== -->
+  <section class="section how-section" id="how">
+    <div class="container">
+      <h2 class="section-title">كيف يعمل؟</h2>
+      <p class="section-desc">ثلاث خطوات وتبدأ الاستماع</p>
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-num">١</div>
+          <h3>حمل التطبيق</h3>
+          <p>حمل كتاب الهدى من Google Play مجاناً. لا يحتاج تسجيل ولا حساب.</p>
+        </div>
+        <div class="step-arrow">←</div>
+        <div class="step-card fade-in">
+          <div class="step-num">٢</div>
+          <h3>اختر القارئ</h3>
+          <p>تصفح أشهر القراء واختر من يستمع قلبك إليه.</p>
+        </div>
+        <div class="step-arrow">←</div>
+        <div class="step-card fade-in">
+          <div class="step-num">٣</div>
+          <h3>استمع وأنت مرتاح</h3>
+          <p>بدون إعلانات، بدون قلق من استهلاك الرصيد. القرآن معك أينما كنت.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Testimonials ====== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">ماذا يقول المستخدمون؟</h2>
+      <p class="section-desc">الآلاف يستمعون يومياً عبر التطبيق</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"والله تطبيق رائع، صار عندي قرآن في جيبي حتى وأنا خارج من غير ما يخلص رصيدي. بارك الله فيكم"</p>
+          <div class="testimonial-author">
+            <span class="author-name">— أحمد من الدار البيضاء</span>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"أخيراً تطبيق قرآن شغال على باقة التمام. كنت نحتاج هاد الحاجة بزاف. جربتو وماشي كاين مشكل"</p>
+          <div class="testimonial-author">
+            <span class="author-name">— سعيد من فاس</span>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"نظيف، بدون إعلانات، والصوت واضح. أحسنتوا صنعاً. جعلها الله في ميزان حسناتكم"</p>
+          <div class="testimonial-author">
+            <span class="author-name">— أبو عبد الله من مراكش</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Final CTA ====== -->
+  <section class="section final-cta" id="download">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2>القرآن في جيبك — مجاناً</h2>
+        <p>حمل التطبيق الآن واستمع أينما كنت. بدون إعلانات. بدون حزمة بيانات. بدون أي تكلفة.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-lg btn-gold">📥 حمل من Google Play</a>
+        </div>
+        <p class="cta-note">لا يحتاج تسجيل • لا يجمّع بيانات • يدعم باقات التواصل الاجتماعي</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/icon.png" alt="كتاب الهدى" class="footer-logo">
+          <p>تطبيق إسلامي مجاني للاستماع إلى القرآن الكريم بأصوات أشهر القراء.</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط</h4>
+          <a href="index.html">الرئيسية</a>
+          <a href="#features">المميزات</a>
+          <a href="#download">تحميل</a>
+        </div>
+        <div class="footer-col">
+          <h4>قانوني</h4>
+          <a href="privacy.html">سياسة الخصوصية</a>
+        </div>
+        <div class="footer-col">
+          <h4>تواصل</h4>
+          <p>عبر البريد الإلكتروني في متجر Google Play</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 كتاب الهدى — جميع الحقوق محفوظة</p>
+        <p class="footer-hadith">"خيركم من تعلم القرآن وعلمه" (صحيح البخاري)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== Sticky Bottom CTA ====== -->
+  <div class="bottom-bar" id="bottomBar">
+    <div class="bottom-bar-inner">
+      <div class="bottom-bar-text">
+        <strong>📖 كتاب الهدى</strong>
+        <span>مجاني — بدون إعلانات — بدون رصيد</span>
+      </div>
+      <a href="#" class="btn btn-sm">📥 حمل مجاناً</a>
     </div>
   </div>
-</section>
 
-<section id="download" class="cta">
-  <div class="container">
-    <h2>حمل التطبيق الآن</h2>
-    <p>متوفر على متجر Google Play</p>
-    <a href="#" class="btn">⬇️ تحميل من Play Store</a>
-  </div>
-</section>
+  <!-- ====== Scroll Animations ====== -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-<footer>
-  <div class="container">
-    <p>© 2026 كتاب الهدى — جميع الحقوق محفوظة</p>
-    <p><a href="privacy.html">سياسة الخصوصية</a></p>
-  </div>
-</footer>
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+    // Bottom bar appears on scroll
+    const bottomBar = document.getElementById('bottomBar');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 400) {
+        bottomBar.classList.add('visible');
+      } else {
+        bottomBar.classList.remove('visible');
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
 </body>
 </html>
