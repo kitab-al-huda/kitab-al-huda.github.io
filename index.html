@@ -383,7 +383,12 @@
         <h2>القرآن في جيبك — مجاناً</h2>
         <p>حمل التطبيق الآن واستمع أينما كنت. بدون إعلانات. بدون حزمة بيانات. بدون أي تكلفة.</p>
         <div class="download-grid">
-          <!-- 1. Play Store — قيد النشر -->
+          <!-- TODO: Quand l'app est publiée sur Play Store, mettre à jour ce bloc :
+               1. class="btn btn-lg btn-muted" → class="btn btn-lg btn-gold"
+               2. href="#" → href="https://play.google.com/store/apps/details?id=com.alfred.kitabalhuda"
+               3. badge "📱 قيد النشر" → "📱 متاح على Google Play"
+               4. caption "سيتم النشر قريباً" → "متوفر الآن على Google Play"
+          -->
           <div class="download-card fade-in">
             <div class="download-badge">📱 قيد النشر</div>
             <a href="#"
@@ -392,7 +397,7 @@
                aria-label="متجر Google Play — قيد النشر">
               📥 متجر Google Play
             </a>
-            <p class="btn-caption">سيتم النشر قريباً في المتجر</p>
+            <p class="btn-caption" id="playStoreCaption">سيتم النشر قريباً في المتجر</p>
           </div>
           <!-- 2. GitHub Releases — متاح الآن -->
           <div class="download-card fade-in">

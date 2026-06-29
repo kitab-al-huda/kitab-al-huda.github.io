@@ -14,3 +14,12 @@ Static landing page for **kitab-al-huda.github.io** (GitHub Pages).
 ## Development
 
 Open `index.html` directly in a browser — no server needed.
+
+## TODO — Play Store goes live
+
+When the app is published on Google Play, update `index.html` (around line 390):
+
+1. `class="btn btn-lg btn-muted"` → `class="btn btn-lg btn-gold"`
+2. `href="#"` → `href="https://play.google.com/store/apps/details?id=com.alfred.kitabalhuda"`
+3. Badge text: `📱 قيد النشر` → `📱 متاح على Google Play`
+4. Caption text: `سيتم النشر قريباً في المتجر` → `متوفر الآن على Google Play`
