@@ -47,7 +47,7 @@
         <img src="assets/icon.png" alt="كتاب الهدى">
         <span>كتاب الهدى</span>
       </div>
-      <a href="#" class="btn btn-sm nav-cta">⬇️ تحميل مجاني</a>
+      <a href="#download" class="btn btn-sm nav-cta">⬇️ تحميل مجاني</a>
     </div>
   </nav>
 
@@ -62,8 +62,8 @@
           صمم خصيصاً لأصحاب باقات التواصل الاجتماعي.
         </p>
         <div class="hero-cta">
-          <a href="#" class="btn btn-lg">📥 حمل التطبيق الآن — مجاناً</a>
-          <p class="btn-caption">متوفر على Google Play</p>
+          <a href="#download" class="btn btn-lg">📥 حمل التطبيق الآن — مجاناً</a>
+          <p class="btn-caption">📱 قيد النشر على Google Play — متاح الآن عبر GitHub</p>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -382,8 +382,41 @@
       <div class="cta-content fade-in">
         <h2>القرآن في جيبك — مجاناً</h2>
         <p>حمل التطبيق الآن واستمع أينما كنت. بدون إعلانات. بدون حزمة بيانات. بدون أي تكلفة.</p>
-        <div class="cta-buttons">
-          <a href="#" class="btn btn-lg btn-gold">📥 حمل من Google Play</a>
+        <div class="download-grid">
+          <!-- 1. Play Store — قيد النشر -->
+          <div class="download-card fade-in">
+            <div class="download-badge">📱 قيد النشر</div>
+            <a href="#"
+               class="btn btn-lg btn-muted"
+               id="playStoreLink"
+               aria-label="متجر Google Play — قيد النشر">
+              📥 متجر Google Play
+            </a>
+            <p class="btn-caption">سيتم النشر قريباً في المتجر</p>
+          </div>
+          <!-- 2. GitHub Releases — متاح الآن -->
+          <div class="download-card fade-in">
+            <div class="download-badge">💻 مفتوح المصدر</div>
+            <a href="https://github.com/kitab-al-huda/kitab-al-huda/releases/latest"
+               class="btn btn-lg btn-outline"
+               target="_blank"
+               rel="noopener noreferrer">
+              📦 GitHub Releases
+            </a>
+            <p class="btn-caption">اطلع على الإصدارات واختر APK/AAB</p>
+          </div>
+          <!-- 3. Direct APK — lien dynamique via GitHub API -->
+          <div class="download-card fade-in">
+            <div class="download-badge">⬇️ تحميل مباشر</div>
+            <a href="https://github.com/kitab-al-huda/kitab-al-huda/releases/latest"
+               class="btn btn-lg btn-gold"
+               id="directApkLink"
+               target="_blank"
+               rel="noopener noreferrer">
+              📲 تحميل APK
+            </a>
+            <p class="btn-caption" id="apkCaption">جلب أحدث إصدار...</p>
+          </div>
         </div>
         <p class="cta-note">لا يحتاج تسجيل • لا يجمّع بيانات • يدعم باقات التواصل الاجتماعي</p>
       </div>
@@ -428,7 +461,7 @@
         <strong>📖 كتاب الهدى</strong>
         <span>مجاني — بدون إعلانات — بدون رصيد</span>
       </div>
-      <a href="#" class="btn btn-sm">📥 حمل مجاناً</a>
+      <a href="#download" class="btn btn-sm">📥 حمل مجاناً</a>
     </div>
   </div>
 
@@ -566,6 +599,35 @@
       if (e.key === 'ArrowLeft') navigateLightbox(-1);
       if (e.key === 'ArrowRight') navigateLightbox(1);
     });
+
+    // ====== GitHub API: fetch latest release APK ======
+    (function fetchLatestApk() {
+      const apkLink = document.getElementById('directApkLink');
+      const apkCaption = document.getElementById('apkCaption');
+      const fallbackUrl = 'https://github.com/kitab-al-huda/kitab-al-huda/releases/latest';
+      if (!apkLink || !apkCaption) return;
+
+      fetch('https://api.github.com/repos/kitab-al-huda/kitab-al-huda/releases/latest')
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(data => {
+          const assets = data.assets || [];
+          let apk = null;
+          for (let i = 0; i < assets.length; i++) {
+            if (assets[i].name.includes('.apk')) { apk = assets[i]; break; }
+          }
+          if (apk && apk.browser_download_url) {
+            apkLink.href = apk.browser_download_url;
+            apkCaption.textContent = 'آخر إصدار: ' + (data.tag_name || 'متاح');
+          } else {
+            throw new Error('No .apk in latest release');
+          }
+        })
+        .catch(err => {
+          console.warn('GitHub API fallback:', err.message);
+          apkLink.href = fallbackUrl;
+          apkCaption.textContent = 'انتقل إلى صفحة الإصدارات ⬅️';
+        });
+    })();
   </script>
 </body>
 </html>
