@@ -1,0 +1,34 @@
+{
+  "dialogs": [
+    {
+      "id": "welcome_minshawi",
+      "title": "مشاري العفاسي متوفر الآن",
+      "message": "يمكنك الآن الاستماع إلى تلاوة الشيخ مشاري العفاسي بدون استهلاك بياناتك.",
+      "imageUrl": null,
+      "buttons": [
+        {
+          "text": "الاستماع الآن",
+          "style": "filled",
+          "action": {
+            "type": "open_url",
+            "value": "https://play.google.com/store/apps/details?id=com.alfred.kitabalhuda"
+          }
+        },
+        {
+          "text": "إغلاق",
+          "style": "text",
+          "action": {
+            "type": "dismiss"
+          }
+        }
+      ],
+      "conditions": {
+        "minVersionCode": 1,
+        "maxVersionCode": null,
+        "startDate": "2026-06-16",
+        "endDate": null,
+        "showOnce": true
+      }
+    }
+  ]
+}
